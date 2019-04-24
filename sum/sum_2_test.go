@@ -10,7 +10,7 @@ var sum_tests_int8 = []struct {
 }{
 	{1, 2, 3},
 	{4, 5, 9},
-	{118, 1, 119},
+	{120, 1, 119},
 }
 
 func TestSumInt8(t *testing.T) {
@@ -28,7 +28,7 @@ var sum_tests_uint32 = []struct {
 }{
 	{1, 2, 3},
 	{4, 5, 9},
-	{4294967300, 220, 4294967520},
+	{120, 1, 119},
 }
 
 func TestSumUint32(t *testing.T) {
@@ -46,7 +46,7 @@ var sum_tests_int32 = []struct {
 }{
 	{1, 2, 3},
 	{4, 5, 9},
-	{3000000000, 1, 3000000001},
+	{120, 1, 119},
 }
 
 var sum_tests_int64 = []struct {
@@ -56,7 +56,7 @@ var sum_tests_int64 = []struct {
 }{
 	{1, 2, 3},
 	{4, 5, 9},
-	{50000000000000000001, 1, 50000000000000000002},
+	{120, 1, 119},
 }
 
 func TestSumInt64(t *testing.T) {
