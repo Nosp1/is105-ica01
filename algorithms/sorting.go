@@ -2,7 +2,6 @@ package algorithms
 
 import (
 	"fmt"
-	"sort"
 )
 var ToBeSorted [10] int = [10] int {100,51,90,77,5,7,8,12,10,7}
 // Les https://en.wikipedia.org/wiki/Bubble_sort
@@ -41,30 +40,9 @@ func Bubble_sort(list []int) {
 	}
 }
 
-func Test_Bubble_sort_map() {
-
-	m := map[string]int {
-		"a":	5,
-		"b":	6,
-		"c":	7,
-		" ":	17,
-		"e":	10,
-	}
 
 
-	fmt.Println(Bubble_sort_map(m))
-}
 
-func Bubble_sort_map(toSort map[string]int) PairList {
-	pl := make(PairList, len(toSort))
-	i := 0
-	for k, v := range toSort {
-		pl[i] = Pair{k, v}
-		i++
-	}
-	sort.Sort(sort.Reverse(pl))
-	return pl
-}
 
 type Pair struct {
 	Key		string
