@@ -5,14 +5,15 @@ import (
 	"math/rand"
 	"time"
 )
-
+// ps uax | grep
+//boring skriver pr sekund
 func Boring01(msg string) {
 	for i := 0; ; i++ {
 		fmt.Println(msg, i)
 		time.Sleep(time.Second)
 	}
 }
-
+//
 func Boring10(msg string, c chan string) {
 	for i := 0; ; i++ {
 		c <- fmt.Sprintf("%s %d", msg, i) // Expression to be sent can be any suitable value.
